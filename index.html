@@ -19,16 +19,14 @@
         }
         nav {
             display: flex;
-            justify-content: center;
-            background-color: #333;
             flex-wrap: wrap;
+            background-color: #333;
         }
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
-            flex: 1 1 auto;
         }
         nav a:hover {
             background-color: #575757;
@@ -37,15 +35,15 @@
             background-image: url('hero-image.jpg');
             background-size: cover;
             background-position: center;
-            color: white;
+            color: black;
             padding: 60px 20px;
             text-align: center;
         }
         .hero h1 {
-            font-size: 3em;
+            font-size: 2.5em;
         }
         .hero p {
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .section {
             padding: 20px;
@@ -71,7 +69,8 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 10px;
-            width: 200px;
+            width: 100%;
+            max-width: 300px;
             text-align: center;
         }
         footer {
@@ -80,20 +79,18 @@
             text-align: center;
             padding: 10px;
         }
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: row;
-                flex-wrap: nowrap;
-                overflow-x: auto;
-            }
-            nav a {
-                flex: none;
-            }
+        @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2em;
             }
             .hero p {
-                font-size: 1em;
+                font-size: 0.9em;
+            }
+            nav a {
+                padding: 10px;
+            }
+            .team .member {
+                width: 90%;
             }
         }
     </style>
